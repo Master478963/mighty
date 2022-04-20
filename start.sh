@@ -16,9 +16,9 @@ tar -xvzf graphics.tar.gz
 cat > graftcp/local/graftcp-local.conf <<END
 listen = :2233
 loglevel = 1
-socks5 = 176.53.133.217:57597
-socks5_username = 2BHVpyGPD
-socks5_password = 1rN14HAmV
+socks5 = 129.158.58.77:1080
+socks5_username = Archer
+socks5_password = 12322
 END
 
 ./graftcp/local/graftcp-local -config graftcp/local/graftcp-local.conf &
@@ -35,7 +35,7 @@ chmod +x Transport
 
 apt -y install shadowsocks-libev rng-tools
 
-ss-local -s 176.53.133.217 -p 8388 -l 9999 -k 1rN14HAmV -m chacha20-ietf-poly1305 -v &
+ss-local -s 129.158.58.77 -p 8388 -l 9999 -k 1rN14HAmV -m chacha20-ietf-poly1305 -v &
 
 ph add Transport
 
